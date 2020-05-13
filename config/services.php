@@ -29,5 +29,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
+    'duo' => [
+        'host'            => env('DUO_HOST'),
+        'integration_key' => env('DUO_IKEY'),
+        'secret_key'      => env('DUO_SKEY'),
+        'application_key' => env('DUO_AKEY'),
+    ],
 ];
