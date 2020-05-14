@@ -38,7 +38,7 @@ class TwoFactorAuthenticationController extends Controller
         if ($user_id == Auth::user()->getAuthIdentifier()) {
             $request->session()->put(self::SESSION_KEY, $user_id);
  
-            return redirect()->intended('/duo');
+            return redirect()->intended('/home');
         } else {
             abort(Response::HTTP_UNAUTHORIZED);
         }

@@ -2,7 +2,7 @@
  
 @section('content')
     <div id="duo">
-        <h2>Two Factor Authentication</h2>
+        <h2>Duo: Two Factor Authentication</h2>
         <iframe id="duo_iframe" frameborder="0">
  
         </iframe>
